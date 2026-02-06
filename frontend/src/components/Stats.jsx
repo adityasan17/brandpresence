@@ -1,11 +1,15 @@
 import React from "react";
-import { Briefcase, Heart, TrendingUp, Star } from "lucide-react";
+import { Briefcase, Heart, TrendingUp, Star, Clock, Coffee, Smile, Target } from "lucide-react";
 
 const iconMap = {
   Briefcase: Briefcase,
   Heart: Heart,
   TrendingUp: TrendingUp,
-  Star: Star
+  Star: Star,
+  Clock: Clock,
+  Coffee: Coffee,
+  Smile: Smile,
+  Target: Target
 };
 
 export const Stats = ({ stats }) => {
@@ -26,14 +30,17 @@ export const Stats = ({ stats }) => {
         {/* Bold Statement */}
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black mb-6 leading-none">
-            The Numbers
+            What Makes Us
             <br />
-            <span className="text-blue-400">Don't Lie</span>
+            <span className="text-blue-400">Different</span>
           </h2>
-          <div className="w-32 h-2 bg-blue-600 mx-auto"></div>
+          <div className="w-32 h-2 bg-blue-600 mx-auto mb-6"></div>
+          <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto font-medium">
+            We're new. We're hungry. And we're not trying to impress you with fake numbers.
+          </p>
         </div>
 
-        {/* Stats Grid - Bold Display */}
+        {/* Stats Grid - Honest & Fun */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {stats.map((stat, index) => {
             const IconComponent = iconMap[stat.icon];
@@ -49,7 +56,7 @@ export const Stats = ({ stats }) => {
                 </div>
                 
                 {/* Value - Extra Bold */}
-                <p className="text-5xl lg:text-7xl font-black mb-4 group-hover:text-blue-400 transition-colors">
+                <p className="text-4xl lg:text-6xl font-black mb-4 group-hover:text-blue-400 transition-colors">
                   {stat.value}
                 </p>
                 
@@ -65,10 +72,17 @@ export const Stats = ({ stats }) => {
           })}
         </div>
 
-        {/* Bottom Statement */}
-        <div className="mt-24 text-center">
-          <p className="text-2xl lg:text-4xl font-black italic text-gray-300 max-w-4xl mx-auto">
-            "Numbers tell stories. We make sure yours is a <span className="text-blue-400">bestseller</span>."
+        {/* Bottom Statement - Honest */}
+        <div className="mt-24 text-center space-y-6">
+          <div className="max-w-4xl mx-auto bg-blue-600/10 border-2 border-blue-600 p-8">
+            <p className="text-2xl lg:text-3xl font-black italic text-white leading-relaxed">
+              "We're not going to lie to you with inflated numbers. <br />
+              We're a <span className="text-blue-400">new agency</span> with fresh ideas, hungry mindset, and <span className="text-blue-400">zero fake promises</span>."
+            </p>
+          </div>
+          
+          <p className="text-lg text-gray-400">
+            (See? Honesty feels nice, doesn't it?)
           </p>
         </div>
       </div>

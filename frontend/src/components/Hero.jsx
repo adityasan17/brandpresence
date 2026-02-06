@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Coffee, Zap } from "lucide-react";
 
 export const Hero = ({ data }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -84,23 +84,56 @@ export const Hero = ({ data }) => {
             </Button>
           </div>
 
-          {/* Stats Strip - Bold Numbers */}
+          {/* Real Stats - Honest for new agency */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto animate-fade-in-delay-3">
-            {[
-              { number: "500+", label: "Projects Crushed" },
-              { number: "200+", label: "Brands Elevated" },
-              { number: "50M+", label: "Eyes Reached" },
-              { number: "350%", label: "Avg. ROI" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center group hover:scale-110 transition-transform duration-300">
-                <div className="text-4xl lg:text-6xl font-black text-blue-600 mb-2 group-hover:text-blue-700">
-                  {stat.number}
-                </div>
-                <div className="text-sm lg:text-base font-bold text-gray-700 uppercase tracking-wider">
-                  {stat.label}
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <Coffee size={32} className="text-blue-600" />
+                <div className="text-4xl lg:text-5xl font-black text-blue-600 group-hover:text-blue-700">
+                  ∞
                 </div>
               </div>
-            ))}
+              <div className="text-sm lg:text-base font-bold text-gray-700 uppercase tracking-wider">
+                Cups of Coffee
+              </div>
+            </div>
+
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <Zap size={32} className="text-blue-600" />
+                <div className="text-4xl lg:text-5xl font-black text-blue-600 group-hover:text-blue-700">
+                  24/7
+                </div>
+              </div>
+              <div className="text-sm lg:text-base font-bold text-gray-700 uppercase tracking-wider">
+                We're Available
+              </div>
+            </div>
+
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="text-4xl lg:text-5xl font-black text-blue-600 mb-2 group-hover:text-blue-700">
+                100%
+              </div>
+              <div className="text-sm lg:text-base font-bold text-gray-700 uppercase tracking-wider">
+                Honest Work
+              </div>
+            </div>
+
+            <div className="text-center group hover:scale-110 transition-transform duration-300">
+              <div className="text-4xl lg:text-5xl font-black text-blue-600 mb-2 group-hover:text-blue-700">
+                0%
+              </div>
+              <div className="text-sm lg:text-base font-bold text-gray-700 uppercase tracking-wider">
+                BS Promised
+              </div>
+            </div>
+          </div>
+
+          {/* Honest Badge */}
+          <div className="mt-16 text-center">
+            <div className="inline-block bg-gray-900 text-white px-6 py-3 font-bold text-sm">
+              🚀 New Agency. Big Dreams. Zero Fake Numbers.
+            </div>
           </div>
         </div>
       </div>
