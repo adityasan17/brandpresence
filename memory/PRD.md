@@ -11,7 +11,7 @@ Build a professional landing page for "Brandpresence" - a digital marketing bran
 
 **Design Inspiration:** socialpanga.com and marblism.com  
 **Brand Identity:** Blue and white theme (matching logo)  
-**Style:** Creative + Professional reflecting marketing + tech company  
+**Style:** Bold, creative, professional - reflecting marketing + tech company  
 **Primary CTA:** Book Consultation
 
 ---
@@ -25,6 +25,7 @@ Build a professional landing page for "Brandpresence" - a digital marketing bran
 - **Routing:** React Router v7
 - **Notifications:** Sonner (Toast)
 - **Icons:** Lucide React
+- **Fonts:** Inter (Google Fonts)
 
 ### Backend Stack (To be implemented)
 - **Framework:** FastAPI
@@ -55,26 +56,29 @@ Build a professional landing page for "Brandpresence" - a digital marketing bran
 
 #### 1. Core Pages & Components
 - ✅ Home page (complete landing page)
-- ✅ Header (sticky navigation with smooth scroll)
-- ✅ Hero section (animated, with floating cards)
-- ✅ Services section (3 service cards with features)
-- ✅ Why Choose Us section (4 feature cards)
-- ✅ Stats section (4 animated counters)
-- ✅ Portfolio section (4 case studies with metrics)
+- ✅ Header (bold navigation with uppercase tracking)
+- ✅ Hero section (rotating words, extra bold typography, geometric backgrounds)
+- ✅ Services section (staggered layout with bold icons)
+- ✅ Why Choose Us section (bold square icons with animated underlines)
+- ✅ Stats section (dark background with grid pattern, bold numbers)
+- ✅ Portfolio section (masonry grid with hover effects)
 - ✅ Testimonials section (3 client testimonials)
 - ✅ Book Consultation section (contact form + info card)
 - ✅ Footer (social links, quick links, contact info)
 
 #### 2. Design Features Implemented
-- ✅ Blue/white color scheme matching logo
-- ✅ Smooth scroll navigation
-- ✅ Hover animations and micro-interactions
-- ✅ Responsive design (mobile, tablet, desktop)
-- ✅ Floating animation cards
-- ✅ Blob background animations
-- ✅ Glass-morphism effects
-- ✅ Custom fonts (Inter)
+- ✅ Blue/white color scheme with black accents
+- ✅ Extra bold typography (font-black, uppercase tracking)
+- ✅ Rotating hero text animation
+- ✅ Geometric background patterns
+- ✅ Square/rectangular design elements (no rounded corners on key elements)
+- ✅ Bold statements and quotes
+- ✅ Staggered service layout
+- ✅ Masonry portfolio grid
+- ✅ Animated underlines on hover
+- ✅ Grid patterns and geometric shapes
 - ✅ Professional imagery from Unsplash
+- ✅ Responsive design (mobile, tablet, desktop)
 
 #### 3. Interactive Elements
 - ✅ Smooth scroll-to-section navigation
@@ -82,10 +86,12 @@ Build a professional landing page for "Brandpresence" - a digital marketing bran
 - ✅ Form submission (mock - shows toast notification)
 - ✅ Hover effects on cards and buttons
 - ✅ Animated scroll indicator
+- ✅ Rotating text in hero
+- ✅ Scale/transform animations
 
 #### 4. Mock Data Structure
 All data stored in `/app/frontend/src/mock.js`:
-- Hero content
+- Hero content with rotating words
 - 3 Services with features
 - 4 Why Choose Us features
 - 4 Portfolio case studies
@@ -149,21 +155,22 @@ portfolio: [
    - Caching strategy
 
 ### P2 - Nice to Have
-1. **Blog Section**
+1. **WhatsApp Chat Widget**
+   - Live WhatsApp integration
+   - Floating chat button
+   - Showcases WhatsApp marketing expertise
+   
+2. **Blog Section**
    - Marketing tips and insights
    - Case study deep dives
    
-2. **Live Chat Integration**
-   - WhatsApp widget
-   - Or third-party chat (Intercom, Drift)
-
 3. **Portfolio Filter**
    - Filter by service type
    - Search functionality
 
-4. **Animation Polish**
+4. **More Animations**
    - Scroll-triggered animations
-   - Parallax effects on hero
+   - Parallax effects
 
 ---
 
@@ -234,20 +241,30 @@ portfolio: [
 ## 🎨 Design System
 
 ### Colors
-- **Primary Blue:** #1E88E5, #1565C0
+- **Primary Blue:** #2563EB (#1E88E5 for accents)
+- **Dark:** #111827 (Gray-900)
 - **White:** #FFFFFF
-- **Gray Scale:** #F9FAFB (bg), #6B7280 (text), #111827 (dark)
-- **Accent:** Green (#10B981), Yellow (#F59E0B)
+- **Gray Scale:** #F9FAFB (bg), #6B7280 (text)
+- **Accent Blue:** #60A5FA (Blue-400)
 
 ### Typography
 - **Font Family:** Inter (Google Fonts)
-- **Headings:** Bold, 700-900 weight
-- **Body:** Regular, 400-500 weight
+- **Headings:** Black weight (900), uppercase with wide tracking
+- **Body:** Regular/Medium (400-500 weight)
+- **Style:** Bold, aggressive, confident
+
+### Layout Principles
+- **Bold statements** over subtle messaging
+- **Square/rectangular elements** over rounded
+- **High contrast** black and white with blue accents
+- **Generous whitespace** for breathing room
+- **Staggered layouts** over symmetrical grids
+- **Geometric patterns** for visual interest
 
 ### Spacing
 - Container max-width: 1280px
-- Section padding: py-20 (5rem)
-- Card spacing: gap-8
+- Section padding: py-32 (8rem) - extra generous
+- Card spacing: gap-12
 
 ---
 
@@ -262,5 +279,5 @@ portfolio: [
 ---
 
 **Last Updated:** December 6, 2025  
-**Status:** Phase 1 Complete (Frontend with Mock Data)  
+**Status:** Phase 1 Complete (Frontend with Bold Creative Design)  
 **Next Phase:** Backend Implementation
