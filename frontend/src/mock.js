@@ -3,9 +3,13 @@
 export const mockData = {
   // Hero Section
   hero: {
-    headline: "Elevate Your Brand's Digital Presence",
-    subheadline: "We blend creativity with cutting-edge technology to deliver marketing solutions that drive real results.",
-    ctaText: "Book Consultation",
+    badge: "Digital Marketing Mavericks",
+    headline: "We Turn Brands Into",
+    headlineRotate: ["Conversations", "Experiences", "Movements", "Legends"],
+    subheadline: "Bold enough to break the rules.",
+    subheadline2: "Smart enough to make it work.",
+    ctaText: "Let's Create Magic",
+    secondaryCtaText: "See Our Work",
     ctaLink: "#consultation"
   },
 
